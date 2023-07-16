@@ -90,6 +90,9 @@ if(isset($_POST['add_to_cart'])){
             
             <a href="checkout.php?get_id=<?= $fetch_product['id']?>" class="btn" id="delete">buy now</a>
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+
+            <input type="submit" value="delete" name="add_to_cart" class="dlt">
+
          </form>
         <?php
                 }
