@@ -17,11 +17,16 @@
         $total_cart_items = $count_cart_items->rowCount();
         ?>
         <a href="shopping-cart.php">Cart<span><?= $total_cart_items;?></span></a>
+
         
     </nav>
 
     <div class="log">
         <a href="user.php" class="sign">user Space</a>
+    </div>
+
+    <div class="log">
+    <a class="btn" href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> logout</a>
     </div>
 
     <div id="menu-btn" class="fas fa-bars"></div>

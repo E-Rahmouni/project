@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2023 at 12:03 PM
+-- Generation Time: Jul 29, 2023 at 07:48 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -28,11 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `user_form` (
-  `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `user_type` varchar(20) NOT NULL
+  `id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `user_type` varchar(255) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -40,9 +40,8 @@ CREATE TABLE `user_form` (
 --
 
 INSERT INTO `user_form` (`id`, `name`, `email`, `password`, `user_type`) VALUES
-(6, 'imad  rahmouni', 'imad19rahmouni@gmail.com', 'c3725bde386e9fa2b449', 'user'),
-(7, 'imad  rahmouni', 'imad19rahmouni@gmail.com', '25f9e794323b453885f5', 'admin'),
-(8, 'imad  rahmouni', 'imad19rahmouni@gmail.com', '25f9e794323b453885f5', 'admin');
+(11, 'imad  rahmouni', 'imad19rahmouni@gmail.com', 'c3725bde386e9fa2b4498699df403986', 'user'),
+(12, 'imad  rahmouni', 'imad19rahmouni@gmail.com', 'a8209e35f7895f23a5254e064860aa69', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +61,7 @@ ALTER TABLE `user_form`
 -- AUTO_INCREMENT for table `user_form`
 --
 ALTER TABLE `user_form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

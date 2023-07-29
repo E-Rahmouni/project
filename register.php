@@ -9,7 +9,7 @@ if(isset ($_POST['submit'])){
     $cpass =  md5($_POST['cpassword']);
     $user_type = ($_POST['user_type']);
 
-    $select = "SELECT * FROM `user_form` WHERE email = '' && password = '$pass'";
+    $select = "SELECT * FROM `user_form` WHERE email = '$email' && password = '$pass'";
 
     $result = mysqli_query($conn, $select);
 
@@ -36,7 +36,7 @@ if(isset ($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-01.css">
+    <link rel="stylesheet" href="css/style-00.css">
     <title>register</title>
 
 </head>

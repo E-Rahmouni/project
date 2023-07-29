@@ -12,7 +12,7 @@ if(isset ($_POST['submit'])){
     $cpass =  md5($_POST['cpassword']);
     $user_type = $_POST['user_type'];
 
-    $select = "SELECT * FROM `user_form` WHERE email = '' && password = '$pass'";
+    $select = "SELECT * FROM `user_form` WHERE email = '$email' && password = '$pass'";
 
     $result = mysqli_query($conn, $select);
 
@@ -23,15 +23,15 @@ if(isset ($_POST['submit'])){
         if($row['user_type'] =='admin'){
 
             $_SESSION['admin_name'] = $row['name'];
-            header('location:admin.php');
+            header('location:view-products.php');
 
         }elseif($row['user_type'] =='user'){
 
             $_SESSION['user_name'] = $row['name'];
-            header('location:user.php');
+            header('location:view-products.php');
         }
     }else{
-        $error[] = 'incorrect email or password!'
+        $error[] = 'incorrect email or password!';
     }
 
 };
@@ -43,7 +43,7 @@ if(isset ($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-01.css">
+    <link rel="stylesheet" href="css/style-00.css">
     <title>register</title>
 
 </head>
