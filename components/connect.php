@@ -11,9 +11,11 @@
         $sharecters_length = strlen($charecters);
         $random = '';
         for ($i = 0; $i < 20; $i++){
-            $random = $charecters[mt_rand(0, $sharecters_length - 1)];
+            $random .= $charecters[mt_rand(0, $sharecters_length - 1)];
         }
         return $random;
-    }
+    };
 
 ?>
+
+ 
