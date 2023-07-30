@@ -31,9 +31,7 @@ if(!isset($_SESSION['admin_name'])){
             <p>this is an admin page</p>
 
             <a class="btn" href="add-product.php">add products</a>
-            <a class="btn" href="login.php"><i class="fa-solid fa-user"></i> login</a>
-            <a class="btn" href="register.php"><i class="fa-solid fa-user"></i> register</a>
-        </div>
+         </div>
     </div>
  </body>
  </html>

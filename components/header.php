@@ -1,9 +1,9 @@
 <header class="header">
 
 <section class="flex">
-<div class="log">
+    <div class="log">
         <a href="admin.php" class="sign">Admin Space</a>
-     </div>
+    </div>
 
     <a href="add-product.php" class="logo">LIG-IONS</a>
 
@@ -26,6 +26,7 @@
     </div>
 
     <div class="log">
+    <a class="btn" href="register.php"><i class="fa-solid fa-user"></i> register</a>
     <a class="btn" href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> logout</a>
     </div>
 
